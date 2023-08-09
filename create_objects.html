@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>Javascript objects</head>
+<body>
+    <h1>Creating javascript objects</h1><p id="demo"></p>
+
+    <script>
+        //creating object using object literal
+        var student = {
+            name: "Anita",
+            age: 25,
+            studies: "Computer Engineering",
+        };
+        document.getElementById("demo").innerHTML = student.name + " of the age " + student.age + " studied " + student.studies;
+    </script>
+
+    <script>
+        //creating object using new keyword
+        var student = new Object();
+        student.name = "Das"
+        student.age = "25"
+        student.studies = "Computer Engineering"
+        document.getElementById("demo").innerHTML = student.name + " of the age " + student.age + " studied " + student.studies;
+
+    </script>
+
+    <script>
+        //creating a object using javascript constructor
+        function stud(name, age, studies){
+            this.name = name;
+            this.age = age;
+            this.studies = studies;
+        }
+        var student = stud("Anita", 25, "Computer Engineering");
+        document.getElementById("demo").innerHTML = student.name + " of the age " + student.age + " studied " + student.studies;
+
+    </script>
+</body>
+</html>

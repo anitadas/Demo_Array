@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>Object Properties</h1>
+    <p id="demo"></p>
+    <button id="clickme">click me</button>
+
+    <!-- <script>
+        //creating object using object literal
+        var student = {
+            name: "Anita",
+            age: 25,
+            studies: "Computer Engineering",
+        };
+        x = student.age;
+        document.getElementById("demo").innerHTML = student.name + " of the age " + x + " studied " + student.studies;
+    </script> -->
+
+    <script>
+        let user = {
+            name: "Chris",
+            age: 25,
+        };
+        function sayhi(){
+            alert("Hello!")
+        }
+        user.message = sayhi;
+        document.getElementById("demo").innerHTML = "Hi" + user.name;
+        document.getElementById("clickme").onclick = user.message;
+
+    </script>
+
+</body>
+</html>
